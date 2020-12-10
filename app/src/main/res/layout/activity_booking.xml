@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_login"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".BookingActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking Lapangan"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#457b9d"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:id="@+id/ETLapangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:editable="false" />
+            <EditText
+                android:id="@+id/ETStatus"
+                android:editable="false"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/ETNama"
+                android:layout_marginTop="10dp"
+                android:hint="Nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/ETtanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal"
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:id="@+id/SSlotJam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:entries="@array/jam" />
+            <EditText
+                android:id="@+id/ETjam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jam"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/ETTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="No Telephone"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/BBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Booking"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
